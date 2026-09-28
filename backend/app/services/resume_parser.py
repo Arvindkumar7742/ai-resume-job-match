@@ -2,10 +2,8 @@ import pymupdf
 
 
 def extract_text_from_pdf(file_path: str) -> str:
-    print("file_path-->>", file_path)
     document = pymupdf.open(file_path)
 
-    print(document)
     try:
         pages = []
 
